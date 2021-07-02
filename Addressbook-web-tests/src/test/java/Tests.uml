@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="57.75" y="-122.0">TestBase</node>
+    <node x="0.0" y="387.0">GroupCreationTests</node>
+    <node x="190.0" y="387.0">GroupDeletionTests</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="GroupDeletionTests" target="TestBase">
+      <point x="0.0" y="-25.0" />
+      <point x="277.5" y="362.0" />
+      <point x="240.0" y="362.0" />
+      <point x="58.75" y="168.5" />
+    </edge>
+    <edge source="GroupCreationTests" target="TestBase">
+      <point x="0.0" y="-25.0" />
+      <point x="85.0" y="362.0" />
+      <point x="122.5" y="362.0" />
+      <point x="-58.75" y="168.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="150.0" y="174.0" />
+  <SelectedNodes>
+    <node>TestBase</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
