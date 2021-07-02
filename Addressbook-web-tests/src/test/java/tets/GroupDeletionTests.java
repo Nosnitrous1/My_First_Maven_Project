@@ -1,14 +1,16 @@
+package tets;
+
 import org.testng.annotations.Test;
 
 public class GroupDeletionTests extends TestBase {
 
   @Test
   public void testUntitledTestCase() throws Exception {
-    gotoGroupPage("groups");
-    selectGroup();
-    deleteSelectedGroups();
-    returnToGroupPage();
-    logout();
+    app.gotoGroupPage("groups");
+    app.selectGroup();
+    app.deleteSelectedGroups();
+    app.returnToGroupPage();
+    app.logout();
   }
 
 }
