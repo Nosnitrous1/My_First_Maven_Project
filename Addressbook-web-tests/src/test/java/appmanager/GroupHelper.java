@@ -2,7 +2,6 @@ package appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class GroupHelper {
   private WebDriver wd;
@@ -16,13 +15,17 @@ public class GroupHelper {
   }
 
   public void fillGroupForm(String groupName, String groupHeader, String groupFooter) {
-    wd.findElement(By.name("group_name")).clear();
-    wd.findElement(By.name("group_name")).sendKeys(groupName);
-    wd.findElement(By.name("group_header")).click();
-    wd.findElement(By.name("group_header")).clear();
-    wd.findElement(By.name("group_header")).sendKeys(groupHeader);
-    wd.findElement(By.name("group_footer")).clear();
-    wd.findElement(By.name("group_footer")).sendKeys(groupFooter);
+    text(groupName, By.name("group_header"));
+    text(groupHeader, By.name("group_header"));
+    text(groupFooter, By.name("group_header"));
+  }
+
+  private void text(String groupName, By locator) {
+    if (groupName != null) {
+      wd.findElement(locator).click();
+      wd.findElement(locator).clear();
+      wd.findElement(locator).sendKeys(groupName);
+    }
   }
 
   public void initGroupCreation(String s) {
