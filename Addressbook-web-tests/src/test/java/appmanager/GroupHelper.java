@@ -3,12 +3,11 @@ package appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.session.FirefoxFilter;
 
 public class GroupHelper {
   private WebDriver wd;
 
-  public GroupHelper(FirefoxDriver wd) {
+  public GroupHelper(WebDriver wd) {
     this.wd = wd;
   }
 
