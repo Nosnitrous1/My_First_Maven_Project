@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../Addressbook-web-tests/pom.xml" />
         <option value="$PROJECT_DIR$/Addressbook-web-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/mantis-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/base/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
