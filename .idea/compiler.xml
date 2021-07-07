@@ -9,6 +9,7 @@
         <module name="base" />
         <module name="Addressbook-web-tests" />
         <module name="mantis-tests" />
+        <module name="soap-sample" />
       </profile>
     </annotationProcessing>
   </component>
