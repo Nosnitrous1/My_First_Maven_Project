@@ -8,9 +8,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 
+import java.io.File;
+import java.io.FileReader;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
+  private final Properties properties;
   WebDriver wd;
 
  private String browser;
@@ -28,17 +32,19 @@ public class ApplicationManager {
       wd = new InternetExplorerDriver();
     }
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    String target = System.getProperty("target", "local");
+    properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
     wd.get(properties.getProperty("web.baseUrl");
   }
 
   public void logout() {
+
     wd.findElement(By.linkText("Logout")).click();
   }
 
   public void stop() {
     wd.quit();
   }
-
 
   private boolean isAlertPresent() {
     try {
@@ -47,13 +53,5 @@ public class ApplicationManager {
     } catch (NoAlertPresentException e) {
       return false;
     }
-  }
-
-  public GroupHelper getGroupHelper() {
-    return groupHelper;
-  }
-
-  public NavigationHelper getNavigationHelper() {
-    return navigationHelper;
   }
 }
