@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/base/pom.xml" />
         <option value="$PROJECT_DIR$/soap-sample/pom.xml" />
         <option value="$PROJECT_DIR$/rest-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/../github-sample/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
