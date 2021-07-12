@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="base" />
-        <module name="Addressbook-web-tests" />
         <module name="mantis-tests" />
+        <module name="mantis-tests (2)" />
+        <module name="Addressbook-web-tests" />
         <module name="soap-sample" />
+        <module name="base" />
+        <module name="mantis-tests (1)" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>
