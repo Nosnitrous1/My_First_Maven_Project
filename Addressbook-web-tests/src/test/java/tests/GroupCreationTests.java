@@ -1,4 +1,4 @@
-package tets;
+package tests;
 
 import org.testng.annotations.*;
 
@@ -8,8 +8,8 @@ public class GroupCreationTests extends TestBase {
   public void testGroupCreation() throws Exception {
     app.getNavigationHelper().gotoGroupPage("groups");
     app.getGroupHelper().initGroupCreation("new");
-    app.getGroupHelper().initGroupCreation("group_name");
-    app.getGroupHelper().fillGroupForm("My 1 group", "Header 1 group","Footer 1 group");
+//    app.getGroupHelper().initGroupCreation("group_name");
+    app.getGroupHelper().fillGroupForm("My 2 group", "Header 2 group","Footer 2 group");
     app.getGroupHelper().submitGroupCreation();
     app.logout();
   }

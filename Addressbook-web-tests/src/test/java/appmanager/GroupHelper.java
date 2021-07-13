@@ -17,7 +17,7 @@ public class GroupHelper {
   public void fillGroupForm(String groupName, String groupHeader, String groupFooter) {
     text(groupName, By.name("group_name"));
     text(groupHeader, By.name("group_header"));
-    text(groupFooter, By.name("group_headerfooter"));
+    text(groupFooter, By.name("group_footer"));
   }
 
   private void text(String groupName, By locator) {

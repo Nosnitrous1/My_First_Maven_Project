@@ -1,4 +1,4 @@
-package tets;
+package tests;
 
 import appmanager.ApplicationManager;
 import org.openqa.selenium.remote.BrowserType;
